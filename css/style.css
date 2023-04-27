@@ -573,12 +573,16 @@ html{
     color: #fff;
     text-decoration: none;
 } */
+.contacto {
+    text-align: center; /* Centra los botones horizontalmente */
+  }
+
 .contacto button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
     width: fit-content;
-    display: block;
+    display: inline-block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;

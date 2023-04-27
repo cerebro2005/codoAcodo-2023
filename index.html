@@ -435,7 +435,7 @@
                     <h2>CONTACTO</h2>
                     <div class="fila">
                         <!-- Formulario -->
-                        <form class="col" id="miFormulario" action="https://formspree.io/f/xgebrqrp" method="post" >
+                        <form class="col" id="miFormulario" action="https://formspree.io/f/xgebrqrp" method="post">
                             <input type="text" name="nombre" placeholder="Tú Nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" spellcheck="true" required/>
                             <input type="tel" name="telefono" placeholder="Número telefónico" required/>
                             <input type="email" name="email" placeholder="Dirección de correo" pattern="^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required/>
@@ -445,6 +445,11 @@
                             <button type="submit">
                                 Enviar Mensaje
                                 <i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+                            <button onclick="limpiarFormulario()">
+                                Limpiar Form.
+                                <i class="fa-solid fa-trash-can-arrow-up"></i>
                                 <span class="overlay"></span>
                             </button>
                         </form>
