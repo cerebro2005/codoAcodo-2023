@@ -65,6 +65,7 @@ html{
     color: #fff;
     display: flex;
     align-items: center;
+    margin-top: 40px;
 }
 .inicio .contenido-banner{
     padding: 20px;
@@ -72,14 +73,18 @@ html{
     max-width: 350px;
     margin: auto;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 .inicio .contenido-banner img{
-    margin-top: 40px;
-    border: 10px solid #1CB698;
+    margin: 20px auto;
+    border: 5px solid #1CB698;
     display: block;
-    width: 80%;
-    margin: auto;
+    width: 60%;
+   
     border-radius: 100%;
 }
 .inicio .contenido-banner h1{
@@ -91,6 +96,8 @@ html{
     font-size: 18px;
     font-weight: normal;
 }
+
+
 .inicio .contenido-banner .redes a{
     color: #fff;
     display: inline-block;
@@ -100,7 +107,7 @@ html{
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 20px 5px;
     font-size: 20px;
     transition: .3s;
 }
@@ -298,7 +305,7 @@ html{
 }
 @keyframes python {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .mysql{
@@ -352,7 +359,7 @@ html{
 }
 @keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 100%;}
 }
 
 .skills .skill .proyect{
@@ -562,10 +569,10 @@ html{
     color: #fff;
     font-size: 18px;
 }
-.contacto a{
+/* .contacto a{
     color: #fff;
     text-decoration: none;
-}
+} */
 .contacto button {
     cursor: pointer;
     background-color: transparent;
@@ -595,15 +602,31 @@ html{
 .contacto .col img{
     width: 100%;
 }
+
+
 .contacto .col .info{
     position: absolute;
     top: 40%;
-    background-color: #252A2E;
+    background-color: rgba(59, 68, 24, 0.8);
     padding: 20px;
     max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
+
+/* Efecto de opacidad aplicado a info */
+.info {
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+/* cuando poso el raton sobre el mapa desaparece la info suavemente*/
+.contacto .col:hover .info {
+    opacity: 0;
+    /* display: none; */
+}
+
 .contacto .col .info ul{
     list-style: none;
 }
@@ -665,9 +688,19 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width:100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
 }
 @media screen and (max-width:700px){
-    
+
     .sobremi .fila{
         display: block;
     }
@@ -710,5 +743,10 @@ footer .arriba{
     }
     .contacto .fila .col{
         width: 100%;
+        
+    }
+    .contacto .fila .col iframe{
+        width: 100%;
+        
     }
 }

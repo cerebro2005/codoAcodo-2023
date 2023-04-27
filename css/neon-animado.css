@@ -3,13 +3,14 @@
   -webkit-animation: animate 5s linear infinite;
 }
 .inicio .contenido-banner h1 span:nth-child(even) {
-  animation-delay: 0.4s;
+  animation-delay: 0.4s;  
 }
 
 @keyframes animate {
   0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
-    color: #0e3742;
+    color: rgba(13, 32, 11, 0.5);
     text-shadow: none;
+
   }
   18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
     color: #fff;
