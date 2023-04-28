@@ -62,7 +62,7 @@ let menuHamburguesa = document.querySelector(".nav-responsive");
 menuHamburguesa.addEventListener("click", mostrarOcultarMenu);
 
 
-let botonReset = document.getElementById("boton-enviar");
+let botonReset = document.getElementById("reset");
 botonReset.addEventListener("click", limpiarFormulario);
 
 
