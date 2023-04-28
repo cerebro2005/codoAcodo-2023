@@ -61,8 +61,9 @@ contactoLink.addEventListener("click", seleccionar);
 let menuHamburguesa = document.querySelector(".nav-responsive");
 menuHamburguesa.addEventListener("click", mostrarOcultarMenu);
 
-let formulario = document.getElementById("miFormulario");
-let botonEnviar = document.getElementById("boton-enviar");
+
+let botonReset = document.getElementById("boton-enviar");
+botonReset.addEventListener("click", limpiarFormulario);
 
 
 function limpiarFormulario() {
