@@ -65,3 +65,5 @@ menuHamburguesa.addEventListener("click", mostrarOcultarMenu);
 function limpiarFormulario() {
     document.getElementById("miFormulario").reset();
   }
+
+
