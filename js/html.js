@@ -273,7 +273,7 @@ for (const card of curriculum) {
     }
 }
 
-let cardporfolio = '';
+let cardporfolio = "";
 
 for (let card of datosporfolio) {
     cardporfolio += `
@@ -286,8 +286,121 @@ for (let card of datosporfolio) {
     </div>
 </div>
 `;
-document.querySelector('.galeria').innerHTML = cardporfolio;
+    document.querySelector(".galeria").innerHTML = cardporfolio;
 }
+
+
+let contactos = `<div class="contenido-seccion">
+<h2>CONTACTO</h2>
+<div class="fila">
+    <!-- Formulario -->
+    <form
+        class="col"
+        id="miFormulario"
+        action="https://formspree.io/f/xgebrqrp"
+        method="post"
+    >
+        <input
+            type="text"
+            name="nombre"
+            placeholder="Tú Nombre"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            spellcheck="true"
+            required
+        />
+        <input
+            type="tel"
+            name="telefono"
+            placeholder="Número telefónico"
+            required
+        />
+        <input
+            type="email"
+            name="email"
+            placeholder="Dirección de correo"
+            pattern="^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+            required
+        />
+        <input
+            type="text"
+            name="asunto"
+            placeholder="Asunto"
+            spellcheck="true"
+            spellcheck="true"
+            required
+        />
+        <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Mensaje"
+            spellcheck="true"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Enviar Mensaje
+            <i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+        </button>
+        <button onclick="limpiarFormulario()">
+            Limpiar Form.
+            <i class="fa-solid fa-trash-can-arrow-up"></i>
+            <span class="overlay"></span>
+        </button>
+    </form>
+    <!-- Mapa -->
+    <div class="col">
+        <h2 style="font-size: 25px">Mapa de ubicación</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.904195512502!2d-58.52642782529513!3d-34.65712236031875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f63396ae49%3A0xb292a958b7730381!2sCodo%20a%20codo%20y%20centro%20de%20formacion%20profecional!5e0!3m2!1sen!2sar!4v1682423890366!5m2!1sen!2sar"
+            width="100%"
+            height="300"
+            style="border: 1px solid black"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <!-- 1. El <iframe> (el reproductor de vídeo) sustituirá a esta etiqueta <div>. -->
+        <div id="player"></div>
+
+        <div class="info">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Av. Gral. Paz 12206-12140, Buenos Aires
+                </li>
+                <li>
+                    <i
+                        class="fa-solid fa-mobile-screen"
+                    ></i>
+                    Llamanos: +54 011 4343443
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email: codoacodo@example.com
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>`;
+document.querySelector(".contacto").innerHTML = contactos;
+
+
+let footer = `<div id="article-container"></div>
+<a href="#inicio" class="arriba">
+<i class="fa-solid fa-angles-up"></i>
+</a>
+<div>
+<p>&copy; Copyright JPDesign - 2023</p>
+<p><small>Todos los derechos reservados.</small></p>
+</div>`;
+document.querySelector("footer").innerHTML = footer;
+
+
 
 /* usando API de YOUTUBE */
 // 2. Este código carga el código IFrame Player API de forma asíncrona.
