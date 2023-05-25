@@ -304,14 +304,15 @@ let contactos = `<div class="contenido-seccion">
             type="text"
             name="nombre"
             placeholder="Tú Nombre"
-            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            pattern="^([A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{3,})+$"
             spellcheck="true"
             required
-        />
-        <input
+            />
+            <input
             type="tel"
             name="telefono"
             placeholder="Número telefónico"
+            pattern="^[0-9\+]+$"
             required
         />
         <input
