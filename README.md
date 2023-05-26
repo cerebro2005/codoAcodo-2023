@@ -6,8 +6,8 @@ En el formulario se realizaron validaciones utilizando HTML y expresiones regula
 
 Las validaciones realizadas en jQuery evitan que se ingresen los siguientes caracteres:
 
-- En el campo de entrada (input): `*<>?¡¢£¤¥¦§¨©ª«¬­®?$%!·&^()"=\§/`
-- En el área de texto (textarea): `*<>¢£¤¥¦§¨©ª«¬­®?%·&"=\§/`
+- En el campo de entrada (input): `*<>?¿¡!|¢£¤¥¦§©ª«¬­®$%·&()*-^"=\\§/`
+- En el área de texto (textarea): `*<>¢£¤|¥¦§¨©ª«¬­®&"=§`
 
 Estas restricciones se aplican para garantizar la integridad de los datos ingresados en el formulario.
 
