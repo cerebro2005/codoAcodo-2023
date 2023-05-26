@@ -1,9 +1,14 @@
-# codoAcodo-2023
+# Codo a Codo - 2023 - TP1
 
-## En el Formulario se realizaron validaciones con HTML y expresiones Regulares.
-### Tambien se realizaron validaciones en los INPUT y TEXTAREA dentro del formulario
-### con ** JQUERY ** cuyo CDN se agrego en el index.html y dicha validación en el script.js.
-#### las validaciones echas en JQuery no dejan ingresar los siguientes caractereres en:
-####    _input:_ *<>?¡¢£¤¥¦§¨©ª«¬­®?$%!·&^()"=\\§/
-####    _textarea:_ *<>¢£¤¥¦§¨©ª«¬­®?%·&"=\\§/
- 
+# Validaciones en Formulario
+
+En el formulario se realizaron validaciones utilizando HTML y expresiones regulares. Además, se llevaron a cabo validaciones en los campos de entrada (input) y áreas de texto (textarea) dentro del formulario utilizando **jQuery**, cuyo CDN se agregó en el archivo `index.html`, y dicha validación se implementó en el archivo `script.js`.
+
+Las validaciones realizadas en jQuery evitan que se ingresen los siguientes caracteres:
+
+- En el campo de entrada (input): `*<>?¡¢£¤¥¦§¨©ª«¬­®?$%!·&^()"=\§/`
+- En el área de texto (textarea): `*<>¢£¤¥¦§¨©ª«¬­®?%·&"=\§/`
+
+Estas restricciones se aplican para garantizar la integridad de los datos ingresados en el formulario.
+
+¡Gracias por tu atención!
