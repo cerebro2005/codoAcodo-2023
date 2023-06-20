@@ -304,7 +304,7 @@ let contactos = `<div class="contenido-seccion">
             type="text"
             name="nombre"
             placeholder="Tú Nombre"
-            pattern="^([A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{3,})+$"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\\s]+$"
             spellcheck="true"
             required
             />

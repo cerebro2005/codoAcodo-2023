@@ -68,7 +68,7 @@ function limpiarFormulario() {
 /* **** Validaciones con Jquery ****
 esos caracteres no dejara ingresar en los input ni textarea 
 que se encuentran dentro del html
-*/
+
     let regAceptInput=/[*<>?¿¡!|¢£¤¥¦§©ª«¬­®$%·&()*-^"=\\§/]/gi
     let regAceptTextarea=/[*<>¢£¤|¥¦§¨©ª«¬­®&"=§]/gi
 	$("form input").keyup(function(){
@@ -79,3 +79,4 @@ que se encuentran dentro del html
 		let info=$(this).val()
 		$(this).val(info.replace(regAceptTextarea,""))
 	})
+*/
