@@ -64,19 +64,3 @@ menuHamburguesa.addEventListener("click", mostrarOcultarMenu);
 function limpiarFormulario() {
     document.getElementById("miFormulario").reset();
 }
-
-/* **** Validaciones con Jquery ****
-esos caracteres no dejara ingresar en los input ni textarea 
-que se encuentran dentro del html
-
-    let regAceptInput=/[*<>?¿¡!|¢£¤¥¦§©ª«¬­®$%·&()*-^"=\\§/]/gi
-    let regAceptTextarea=/[*<>¢£¤|¥¦§¨©ª«¬­®&"=§]/gi
-	$("form input").keyup(function(){
-		let info=$(this).val()
-		$(this).val(info.replace(regAceptInput,""))
-	})
-	$("form textarea").keyup(function(){
-		let info=$(this).val()
-		$(this).val(info.replace(regAceptTextarea,""))
-	})
-*/
