@@ -1,5 +1,5 @@
 let menu = `<div class="logo">
-<a href="#">JPDesign</a>
+<a href="#">PADesign</a>
 </div>
 <div id="weather"></div>
 <nav id="nav">
@@ -35,8 +35,8 @@ let cardPresentacion = `
         <img src="img/damianrolcac.jpg" alt="" />
     </div>
     <h1>
-        <span>PEREZ</span>
-        <span>JUAN</span>
+        <span>PEPE</span>
+        <span>ARGENTO</span>
     </h1>
     <h2>Desarrollador de Software</h2>
     <h2>Full Stack Python</h2>
@@ -56,7 +56,7 @@ let sobreMi = `
 <div class="contenido-seccion">
     <h2>Sobre Mí</h2>
     <p>
-        <span>Hola, soy "Perez, Juan".</span> Lorem ipsum dolor
+        <span>Hola, soy "Argento, Pepe".</span> Lorem ipsum dolor
         sit amet consectetur adipisicing elit. Quisquam unde
         soluta minima necessitatibus, voluptas consectetur vero
         officiis quas, explicabo deleniti repellendus aliquid
